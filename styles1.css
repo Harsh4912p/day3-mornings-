@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harsh Sanjay Pawar - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .profile-photo {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    /* Navbar */
+    .navbar ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: #07b18f;
+      padding: 10px;
+      list-style-type: none;
+      margin: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Sections */
+    .section {
+      margin: 30px 0;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: background 0.3s;
+    }
+
+    .highlight {
+      background-color: #e0f7f4;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      color: #07b18f;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    /* Media & Links */
+    .email-link {
+      color: #07b18f;
+      text-decoration: underline;
+      font-size: 1.1rem;
+    }
+
+    .github-profile h3 {
+      margin-top: 25px;
+      color: #333;
+    }
+
+    .github-profile p {
+      margin: 10px 0;
+      color: #666;
+    }
+
+    .github-button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .github-button:hover {
+      background-color: #555;
+    }
+
+    .btn.btn2 {
+      background-color: #ff004f;
+      color: white;
+      margin-top: 15px;
+    }
+
+    .btn.btn2:hover {
+      background-color: #e60046;
+    }
+
+    /* Toggle Button */
+    .toggle-container {
+      text-align: right;
+      padding: 10px 20px;
+    }
+
+    .toggle-button {
+      background-color: #07b18f;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    body.dark-mode .card {
+      background-color: #1e1e1e;
+    }
+
+    body.dark-mode .highlight {
+      background-color: #2b2b2b;
+    }
+
+    body.dark-mode .section-title {
+      color: #00d9b3;
+    }
+
+    body.dark-mode .toggle-button {
+      background-color: #00d9b3;
+      color: black;
+    }
+
+    body.dark-mode .github-profile h3,
+    body.dark-mode .github-profile p {
+      color: #ccc;
+    }
+
+    body.dark-mode .section.highlight.card {
+      background-color: #1e1e1e;
+      color: #fff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .review-list ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .review-list li {
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .btn, .btn2 {
+      background-color: #07b18f;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover, .btn2:hover {
+      background-color: #059e7e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Toggle Button -->
+    <div class="toggle-container">
+      <button id="theme-toggle" class="toggle-button">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero highlight">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hello, I'm <strong>Harsh Pawar</strong>. Here's my journey, achievements, and aspirations!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#goals">Future Goals</a></li>
+        <li><a href="#personal">Personal Side</a></li>
+        <li><a href="#best-practices">Best Practices</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="welcome" class="section">
+        <header class="hero highlight">
+          <img src="profile1.png" alt="Harsh Pawar Photo" class="profile-photo" />
+          <h1>Welcome to My Portfolio</h1>
+          <p>Hello, I'm <strong>Harsh Pawar</strong>. Here's my journey, achievements, and aspirations!</p>
+        </header>
+        <h2>Welcome</h2>
+        <div class="media">
+          <video width="700" height="400" controls>
+            <source src="portfoliovideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section id="about" class="section card">
+        <h2 class="section-title">About Me</h2>
+        <ul>
+          <li><strong>Name:</strong> Harsh Pawar</li>
+          <li><strong>Location:</strong> Mumbai, India</li>
+          <li><strong>Education:</strong> Computer Engineering, St. John College of Engineering and Management</li>
+          <li><strong>Languages Known:</strong> C, SQL, Python</li>
+        </ul>
+      </section>
+
+      <section id="achievements" class="section card">
+        <h2 class="section-title">Achievements</h2>
+        <ul>
+          <li>Built a Currency Exchange in Python</li>
+          <li>Built an Organ Donation Application in .NET with SQL</li>
+        </ul>
+      </section>
+
+      <section id="goals" class="section card">
+        <h2 class="section-title">Future Goals</h2>
+        <p>My goal is to become a skilled Data Engineer who builds scalable, efficient, and secure data pipelines that power intelligent decision-making. I’m passionate about working with large datasets and transforming raw information into meaningful insights.</p>
+      </section>
+
+      <section id="personal" class="section card">
+        <h2 class="section-title">Personal Side</h2>
+        <p><strong>Hobbies:</strong> Reading, Gaming – I enjoy storytelling and capturing moments through different mediums.</p>
+        <p><strong>Role Models:</strong> Steve Jobs for innovation, A.P.J. Abdul Kalam for vision and humility</p>
+        <p><strong>Favorite Books:</strong> "Deep Work" by Cal Newport – it taught me how to focus and manage time effectively.</p>
+        <p><strong>Favorite Websites/Startups:</strong> GitHub (open collaboration), Notion (productivity), Zerodha (Indian fintech innovation)</p>
+      </section>
+
+      <section id="best-practices" class="section card">
+        <h2 class="section-title">Best Practices Followed</h2>
+        <ul>
+          <li>Semantic HTML5 structure</li>
+          <li>Consistent and personal CSS color palette (#07b18f)</li>
+          <li>Responsive layout for all screen sizes</li>
+          <li>External stylesheet for separation of concerns</li>
+          <li>Alt text and fallback media for accessibility</li>
+          <li>Unique personal content and layout</li>
+          <li>Deployable via GitHub Pages</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section highlight card">
+        <h2 class="section-title"><i class="fas fa-envelope"></i> Get in Touch</h2>
+        <p>Email: <a href="mailto:123harsh2069@sjcem.edu.in" class="email-link">123harsh2069@sjcem.edu.in</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917058066141" class="email-link">+91 7058066141</a></p>
+
+        <div class="github-profile">
+          <h3><i class="fab fa-github"></i> GitHub Profile</h3>
+          <p>Check out my repositories and projects on GitHub!</p>
+          <a href="https://github.com/Harsh4912p" target="_blank" class="github-button btn btn2">Visit GitHub</a>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="text-lg font-semibold text-[#07b18f] mb-2">
+            <i class="fas fa-map-marker-alt"></i> My Location
+          </h3>
+          <div class="w-full rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.1545023702033!2d72.78093297494425!3d19.706045231892034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be71c92fbd91e67%3A0x2a3ce68676417a45!2sSt.%20John%20College%20of%20Engineering%20and%20Management!5e0!3m2!1sen!2sin!4v1747732838866!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review Section -->
+      <section id="reviews" class="section card">
+        <h2 class="section-title"><i class="fas fa-star"></i> Leave a Review</h2>
+
+        <form id="review-form">
+          <label for="name">Your Name:</label><br />
+          <input type="text" id="name" name="name" required><br />
+
+          <label for="review">Your Review:</label><br />
+          <textarea id="review" name="review" rows="4" required></textarea><br />
+
+          <button type="submit" class="btn btn2">Submit Review</button>
+        </form>
+
+        <div id="review-list" class="review-list">
+          <h3>User Reviews:</h3>
+          <ul id="reviews-display"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Dark Mode & Review Script -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      toggleBtn.textContent = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+
+    document.getElementById("review-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const review = document.getElementById("review").value.trim();
+
+      if (name && review) {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${name}</strong>: ${review}`;
+        document.getElementById("reviews-display").appendChild(li);
+        document.getElementById("review-form").reset();
+      }
+    });
+  </script>
+</body>
+</html>
